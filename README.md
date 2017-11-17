@@ -49,6 +49,8 @@ In order to use aws ec2 for the temporary environment used by kitchen, the cookb
 
 It's important to understand that test kitchen will create the instance for testing so you don't have to launch an aws instance manually - test kitchen will handle that for you.
 
+'Kitchen test' will create an instance, run tests and destroy the instance at the end of the run.  But the other methods used by kitchen (create, converge, verify) will allow you to view your instance and confirm file locations, etc. for verification.
+
 Here is an example for an ec2 configuration:
 
 ---
