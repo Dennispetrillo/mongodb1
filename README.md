@@ -84,19 +84,28 @@ platforms:
   - name: centos-7
 
 suites:
-  - name: setup (the tests are all in this one suite)
-  
+    - name: setup 
+    
     run_list:
     
-      - recipe[mongodb1::setup]
-      
+        - recipe[mongodb1::setup]
+        
     verifier:
     
-      inspec_tests
+      inspect_tests:
       
-        - test/smoke/setup  
-        
-    attributes
+            - test/smokee/setup
+            
+    attributes:
+    
+suites:
+  - name: setup
+    run_list:
+      - recipe[mongodb1::setup]
+    verifier:
+      inspec_tests:
+         - test/smoke/setup
+    attributes:
       
 
 
