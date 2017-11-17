@@ -30,7 +30,7 @@ Node = AWS ec2 RHEL 7.4 64-bit instance
 - Upload cookbook to chef server
 - Create an ec2 instance
     - RHEL 7.4 64-bit
-    - Create a .pem key when creating the instance if one not already created.  Option available when creating the instance         and needed for bootstrapping the node and accessing the node in local mode.
+    - Create a .pem key when creating the instance if one not already created.  Option available when creating the instance         and needed for bootstrapping the node and accessing the node in local mode using the methods below.
     - Store the .pem in ~/.ssh/YourPemName.pem
 - Bootstrap the node (here is one format that may be used at the command line of the local workstation)
   knife bootstrap IDPADDRESS --ssh-user ec2-user --sudo --identify-file ~/.ssh/YourPemFileName.pem -N NODENAME --run-list 'cookbook::recipe'
