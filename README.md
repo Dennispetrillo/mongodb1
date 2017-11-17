@@ -98,7 +98,7 @@ suites:
     
       inspect_tests:
       
-            - test/smokee/setup
+            - test/smoke/setup
             
     attributes:
     
