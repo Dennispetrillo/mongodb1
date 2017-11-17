@@ -47,6 +47,8 @@ Test/smoke/setup/setup/setup_test.rb _contains tests developed to support the re
 
 In order to use aws ec2 for the temporary environment used by kitchen, the cookbookName/.kitchen.yml file must be configured. 
 
+In addition it's important to set up Access Key and Secret Access key for Kitchen.  That can be created in the AWS interface for a user under Security Credentials.  More information around test kitchen can be viewed here https://learn.chef.io/tracks/local-development-and-testing#/
+
 It's important to understand that test kitchen will create the instance for testing so you don't have to launch an aws instance manually - test kitchen will handle that for you.
 
 'Kitchen test' will create an instance, run tests and destroy the instance at the end of the run.  But the other methods used by kitchen (create, converge, verify) will allow you to view your instance and confirm file locations, etc. for verification.
