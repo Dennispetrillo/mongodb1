@@ -56,12 +56,19 @@ Here is an example for an ec2 configuration:
 ---
 driver:
   name: ec2
+  
   aws_ssh_key_id: YourKeyPair (do not inclulde the .pem)
+  
   region: aws region, i.e., us-west-2, etc.
+  
   availability_zone: a (you may see us-west-2a, us-west-2b, etc.  Here we just want the letter)
+  
   instance_type: t2.micro (take a look at the instance type (step 2) when launching an instance to see the options)
+  
   image_id: ami-9fa343e7 (the image id of the instance you'd like to launch.  You can get that from Step 1 on the launch                                process)
+  
   security_group_ids: ['the security group you'd like applied to this instance']
+  
   retryable_tries: 120
 
 provisioner:
