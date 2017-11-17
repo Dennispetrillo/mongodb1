@@ -92,11 +92,12 @@ suites:
       
     verifier:
     
-      inspec_tests:
+      inspec_tests
       
-         - test/smoke/setup
-         
-    attributes:
+        - test/smoke/setup  
+        
+    attributes
+      
 
 
 
