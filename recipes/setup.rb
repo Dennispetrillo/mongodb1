@@ -1,7 +1,5 @@
 #
 # Cookbook:: mongodb1
-# Recipe:: default
+# Recipe:: setup
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
-
-include_recipe 'mongodb1::install'
