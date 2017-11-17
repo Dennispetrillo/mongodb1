@@ -98,14 +98,7 @@ suites:
             
     attributes:
     
-suites:
-  - name: setup
-    run_list:
-      - recipe[mongodb1::setup]
-    verifier:
-      inspec_tests:
-         - test/smoke/setup
-    attributes:
+
       
 
 
