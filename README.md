@@ -1,6 +1,6 @@
 # mongodb1
 
-## Install MongoDB
+## About MongoDB
 
 MongoDB is an open-source, document-oriented database designed for ease of development and scaling.  The MongoDB documentation site includes a [tutorial on how to install MongoDB on RHEL-based system](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/).
 
