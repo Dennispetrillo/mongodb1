@@ -81,8 +81,8 @@ transport:
   ssh_key: ~/.ssh/YourKeyPair.pem
 
 platforms:
-
-  - name: centos-7
+    
+    - name: centos-7
 
 suites:
 
