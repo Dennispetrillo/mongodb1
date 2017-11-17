@@ -19,7 +19,9 @@ This cookbook is using the following software versions:
 - Mongo 3.4 Community Edition
 
 Cookbook developed locally and uploaded to chef-server
+
 Bootstrapped using SSH
+
 Node = AWS ec2 RHEL 7.4 64-bit instance
 
 ## setup
