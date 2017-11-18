@@ -26,7 +26,7 @@ Node = AWS ec2 RHEL 7.4 64-bit instance
 
 ## setup (assuming chefdk and tools are on the workstation)
 
-- Fork this repo to our cookbooks directory within your chef-repo directory
+- Fork this repo to your cookbooks directory within your chef-repo directory
 - Upload cookbook to chef server
 - Create an ec2 instance
     - RHEL 7.4 64-bit
