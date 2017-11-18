@@ -20,7 +20,7 @@ This cookbook is using the following software versions:
 
 Cookbook developed locally and uploaded to chef-server
 
-Bootstrapped using SSH
+Bootstrapped to ec2 node using SSH
 
 Node = AWS ec2 RHEL 7.4 64-bit instance
 
@@ -51,7 +51,7 @@ In addition it's important to set up Access Key and Secret Access key for Kitche
 
 It's important to understand that test kitchen will create the instance for testing so you don't have to launch an aws instance manually - test kitchen will handle that for you.
 
-'Kitchen test' will create an instance, run tests and destroy the instance at the end of the run.  But the other methods used by kitchen (create, converge, verify) will allow you to view your instance and confirm file locations, etc. for verification.
+'Kitchen test' will create an instance, run tests and destroy the instance at the end of the run.  But the other methods used by kitchen (create, converge, verify) will allow you to view your instance and confirm file locations, etc. for verification as the instance will persist until destroyed.
 
 Here is an example for an ec2 configuration:
 
@@ -82,25 +82,16 @@ verifier:
 transport:
   ssh_key: ~/.ssh/YourKeyPair.pem
 
-platforms:
-    
-    - name: centos-7
-
-suites:
-
-    - name: setup 
-    
-    run_list:
-    
-        - recipe[mongodb1::setup]
-        
-    verifier:
-    
-      inspect_tests:
-      
-            - test/smoke/setup
-            
-    attributes:
+platforms: <br>
+    \- name: centos-7<br>
+suites:<br>
+    \- name: setup <br>
+    run_list:<br>
+        \- recipe[mongodb1::setup]<br>
+    verifier:<br>
+        inspect_tests:<br>
+        \- test/smoke/setup<br>
+    attributes:<br>
     
 
       
