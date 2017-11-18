@@ -83,8 +83,8 @@ Here is an example for an ec2 configuration:
   ssh_key:** ~/.ssh/YourKeyPair.pem
 
 **platforms:** <br>
-    **\- name:<em> centos-7<br>
-**suites:<br>
+    \- name: centos-7<br>
+**suites:**<br>
     \- name: setup <br>
     run_list:<br>
         \- recipe[mongodb1::setup]<br>
