@@ -90,7 +90,7 @@ Here is an example for an ec2 configuration:
         \- recipe[mongodb1::setup]<br>
     verifier:<br>
         inspect_tests:<br>
-        \- test/smoke/setup<br>
+         \- test/smoke/setup<br>
     attributes:<br>
     
 
