@@ -37,7 +37,7 @@ Node = AWS ec2 RHEL 7.4 64-bit instance
 - The above should compile, converge and perform a chef client run
 - Log in to the node remotely.  Here is one format that may be used at the command line of the local workstation
         ssh -i ~/.ssh/YourPemKeyFileName.pem ec2-user@IPADDRESS-OF-THE-NODE
-- Enter mongo and a connection to mongodb should be initiated
+- Enter mongo and a connection to mongodb shell should be initiated
 
 ## Kitchen Testing
 
